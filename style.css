@@ -28,3 +28,13 @@ body {
 .main {
     border: 2px solid turquoise;
 }
+
+.logo__container {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

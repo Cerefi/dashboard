@@ -1,0 +1,30 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    border: 2px solid yellow;
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    border: 2px solid rebeccapurple;
+}
+
+.main {
+    border: 2px solid turquoise;
+}

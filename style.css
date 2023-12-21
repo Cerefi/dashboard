@@ -17,9 +17,12 @@ body {
     grid-column: 1;
     grid-row: 1 / -1;
     border: 2px solid yellow;
+}
 
+.sidebar__container {
+    height: 70%;
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: .4fr 1fr 1fr;
 }
 
 .sidebar__primary {
@@ -28,6 +31,11 @@ body {
 
 .sidebar__secondary {
     grid-row: 3;
+}
+
+.sidebar__primary,
+.sidebar__secondary {
+    font-size: 1.5rem;
 }
 
 .header {
@@ -43,6 +51,7 @@ body {
 .logo__container {
     display: flex;
     grid-row: 1;
+    font-size: 2.25rem;
 }
 
 ul {

@@ -36,14 +36,24 @@ li {
     grid-row: 2;
 }
 
-svg{
-    width: 1.5rem;
-    margin: 0 4px;
-}
-
 li {
     display: flex;
     align-items: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #94a3b8;
+}
+
+svg{
+    width: 1.5rem;
+    margin: 0 4px;
 }
 
 .sidebar__secondary {

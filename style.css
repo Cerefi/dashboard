@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+img {
+    width: 3rem;    
+}
+
 .grid__container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -110,7 +114,16 @@ input {
 }
 
 .profile__nav {
+    font-size: 1.75rem;
     grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.profile__nav svg {
+    width: 2rem;
 }
 
 .user__info {

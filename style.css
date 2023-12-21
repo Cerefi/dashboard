@@ -151,6 +151,26 @@ input {
 .buttons {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    gap: 2rem;
+}
+
+button {
+    background-color: #94a3b8;
+    border: none;
+    border-radius: 100px;
+    padding: .2rem 1rem;
+    font-size: 1.5rem;
+    width: 22%;
+    color: white;
+}
+
+button:hover {
+    background-color: #cbd5e1;
+    cursor: pointer;
 }
 
 .main {

@@ -197,14 +197,31 @@ button:hover {
     gap: 2rem;
 }
 
+p {
+    margin: 0;
+}
+
+.card p {
+    font-size: large;
+}
+
 .card {
     width: 90%;
     background-color: #f8fafc;
     padding: 0 5%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     border-radius: 5px;
+    border-left: 7px solid red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+h3,
+h4 {
+    margin: 1rem 0 .5rem 0;
+}
+
 .interact {
     align-self: flex-end;
     margin-bottom: 1rem;
@@ -223,7 +240,17 @@ button:hover {
 .announcement__container {
     grid-column: 2;
     grid-row: 1;
+    margin-top: 3rem;
 }
+
+.announcement__card {
+    margin-right: 4rem;
+    background-color: #f8fafc;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 .logo__container {
     display: flex;
@@ -235,4 +262,29 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.trending__container {
+    margin-top: 1rem;
+}
+
+.trending__card {
+    margin-right: 4rem;
+    background-color: #f8fafc;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.trending__card div ~ div {
+    margin-top: 1rem;
+}
+
+.trending__card > div {
+    display: flex;
+}
+
+.trending__card > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }

@@ -126,9 +126,26 @@ input {
     width: 2rem;
 }
 
+.user__info img {
+    width: 5rem;
+}
+
 .user__info {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.info {
+    margin-left: 1rem;
+}
+
+.info p {
+    font-size: 2rem;
+    margin: 0;
 }
 
 .buttons {

@@ -174,7 +174,7 @@ button:hover {
 }
 
 .main {
-    background-color: #f8fafc;
+    background-color: #cbd5e1;
     color: #020617;
 }
 
@@ -185,9 +185,39 @@ button:hover {
     height: 100%;
 }
 
-.project__container {
+.projects__container {
     grid-column: 1;
     grid-row: 1 / -1;
+    padding-bottom: 2rem;
+}
+
+.project__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    width: 90%;
+    background-color: #f8fafc;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.interact {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .announcement__container {

@@ -22,7 +22,12 @@ body {
 .sidebar__container {
     height: 70%;
     display: grid;
-    grid-template-rows: .4fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    padding: 0 2rem;
+}
+
+li {
+    padding: .35rem 0;
 }
 
 .sidebar__primary {
@@ -35,13 +40,39 @@ body {
 
 .sidebar__primary,
 .sidebar__secondary {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .header {
     grid-column: 2 / -1;
     grid-row: 1;
     border: 2px solid rebeccapurple;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.searchbar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.profile__nav {
+    grid-column: 2 / 3;
+}
+
+.user__info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .main {
